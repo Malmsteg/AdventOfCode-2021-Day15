@@ -23,7 +23,7 @@ namespace AdventOfCode_2021_Day15
             {
                 for (int j = 0; j < text.Length; j++)
                 {
-                    puzzleInput[i,j] = Convert.ToInt32(text[i][j]);
+                    puzzleInput[i,j] = Convert.ToInt32(text[i][j] - '0');
                 }
             }
 
@@ -37,6 +37,17 @@ namespace AdventOfCode_2021_Day15
                 aPath+= puzzleInput[0,j];
             }
             Console.WriteLine(aPath);
+
+            int tempPath = 0;
+            for(int i = 1; i < puzzleInput.GetLength(0);i++)
+            {
+                for(int j = 0; j < puzzleInput.GetLength(1);j++)
+                {
+
+                }   
+            }
+
+
 
 
         }
